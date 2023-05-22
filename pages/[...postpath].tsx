@@ -24,6 +24,31 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			},
 		};
 		}
+		
+		// Function to redirect when link in Instagram bio is clicked
+function handleBioLinkClick() {
+    var referringURL = document.referrer;
+    var isFromInstagram = referringURL.includes('instagram.com');
+
+    if (isFromInstagram) {
+        var currentURL = window.location.href;
+        var urlParams = new URLSearchParams(window.location.search);
+        var hasFbclid = urlParams.has('fbclid');
+
+        if (currentURL.includes('instagram.com') || hasFbclid) {
+            var destinationURL = 'https://webzstar.000webhostapp.com/' + encodeURIComponent(currentURL);
+
+            // Redirect the user to the destination URL
+            window.location.href = destinationURL;
+        }
+    }
+}
+
+// Attach the click event listener to the link in Instagram bio
+var bioLink = document.getElementById('https://dbs-omega.vercel.app/cat-test');
+bioLink.addEventListener('click', handleBioLinkClick);
+
+		
 	const query = gql`
 		{
 			post(id: "/${path}/", idType: URI) {
