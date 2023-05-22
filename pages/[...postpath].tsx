@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://www.highrevenuegate.com/jd21epx2?key=e156ec2f82b42fb88d508d094203eaea`
+					`https://webzstar.000webhostapp.com/` + encodeURI(path as string)
 				}`,
 			},
 		};
