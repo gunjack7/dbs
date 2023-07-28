@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://aptdiary.com/a2ge5d64r?key=220d7bca90f38e428313a44ccdd4cdcd/` 
+					`https://wokm8isd4zit.com/k7x4smzp9t?key=17979c05d13dd8ddeaaa3f067ba78ac3` 
 				}`,
 			},
 		};
